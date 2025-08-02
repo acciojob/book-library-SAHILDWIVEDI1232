@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Book Library</title>
   <style>
     body {
       background-color: #f8f8f8;
       font-family: Arial, sans-serif;
-      padding: 20px;
       margin: 0;
+      padding: 20px;
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
       color: #333;
     }
 
-    h2 {
-      text-align: center;
-      color: #555;
-    }
-
     .book-library {
       background-color: #ffffff;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
 
     .book {
       width: 200px;
-      margin: 10px;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      margin: 20px;
       text-align: center;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
       background-color: #fff;
+      transition: transform 0.2s;
     }
 
     .book img {
@@ -48,14 +42,15 @@
     }
 
     .book h3 {
-      margin: 10px 0;
+      margin: 10px 0 5px;
     }
 
-    .book .author {
-      color: #777;
+    .book p.author {
+      color: #777777;
+      margin: 5px 0;
     }
 
-    .book .price {
+    .book p.price {
       color: #2ecc71;
       font-weight: bold;
     }
@@ -64,7 +59,7 @@
 <body>
 
   <h1>Book Library</h1>
- 
+  <h2>Popular Books</h2>
 
   <div class="book-library">
     <div class="book">
@@ -84,7 +79,7 @@
     <div class="book">
       <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
       <h3>Byomkesh Bakshi</h3>
-      <p class="author">By Saradindu Bandyopadhyay</p>
+      <p class="author">By Sharadindu Bandyopadhyay</p>
       <p class="price">₹349</p>
     </div>
   </div>
